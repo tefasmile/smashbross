@@ -1,0 +1,124 @@
+doctype html
+html(lang="es")
+	head
+		title Web Smash Bross 
+		meta(charset="utf-8")
+		meta(name="viewport",content="width=device-width,initial-scale=1,maximun-scale=1")
+		link(rel="stylesheet", href="tema/css/estilos.css")
+		link(rel="stylesheet", href="tema/css/icoon.css")
+		script(src="http://code.jquery.com/jquery-1.11.2.min.js")
+		script(src="tema/js/scripts.js")
+	body
+		header#header
+			.grupo
+				.caja.web-30
+					h2.logo Smash 
+						span Bross
+					p.subtitle Videogame 
+				.caja.web-70
+					#mostrar-menu Menu
+					ul.menu
+						li.menu__item: a.menu__link(href="#") Home
+						li.menu__item: a.menu__link(href="#") About us
+						li.menu__item: a.menu__link(href="#") Services
+						li.menu__item: a.menu__link(href="#") Blog
+						li.menu__item: a.menu__link(href="#") Conctacts
+
+			.grupo
+				.caja
+					.banner
+						img(src="img/banner.jpg", alt="Smash")
+						.copy
+							h2.copy__title Effective Game 
+								span Full Game
+							p.copy__description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptas eligendi pariatur perferendis molestias veniam, delectus, voluptate explicabo accusantium a obcaecati cum provident perspiciatis beatae ipsam illo dolores officia tempore.
+							a.copy__button(href="#") More
+
+		section#servicios
+			.grupo
+				.caja.total
+					h2.section-title Services 
+						span What we offer to our clients
+				.caja.tablet-1-3
+					.servicio
+						img.servicio__img(src="img/icon.png")
+						h3.servicio__title Transplantation
+						p.servicio__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas feugiat dolor. Quisque eget eros quis neque egestas ultricies.
+				.caja.tablet-1-3
+					.servicio
+						img.servicio__img(src="img/icon.png")
+						h3.servicio__title Transplantation
+						p.servicio__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas feugiat dolor. Quisque eget eros quis neque egestas ultricies.
+				.caja.tablet-1-3
+					.servicio
+						img.servicio__img(src="img/icon.png")
+						h3.servicio__title Transplantation
+						p.servicio__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas feugiat dolor. Quisque eget eros quis neque egestas ultricies. 
+
+		section#clientes
+			.grupo
+				.caja.web-25
+					.clientes 
+						h2.clientes__titulo This is the list of our recent clients
+						.clientes__nav
+							.clientes__nav__item.clientes__nav__item--prev
+							.clientes__nav__item.clientes__nav__item--next
+				.caja.web-25
+					.cliente
+						img.cliente__img(src="img/kirby.jpg")
+						h3.cliente__title Cliente 1
+						p.cliente__description 
+							|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas feugiat feliz.
+
+				.caja.web-25
+					.cliente
+						img.cliente__img(src="img/mario.jpg")
+						h3.cliente__title Cliente 2
+						p.cliente__description 
+							|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas feugiat feliz.
+				.caja.web-25
+					.cliente
+						img.cliente__img(src="img/luigi.jpg")
+						h3.cliente__title Cliente 3
+						p.cliente__description 
+							|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas feugiat feliz.
+
+		section#noticias
+			.grupo
+				.caja.tablet-1-3
+					.noticia
+						h3.noticia__title Hair transplants
+							span Vestibulus laculis
+						img.noticia__img(src="img/noticia1.jpg", alt="")
+						p.noticia__description 
+						|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas feugiat dolor. Quisque eget eros quis neque egestas ultricies.  
+				.caja.tablet-1-3
+					.noticia
+						h3.noticia__title Women's hair loss
+							span Vestibulus laculis
+						img.noticia__img(src="img/noticia1.jpg", alt="")
+						p.noticia__description 
+						|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas feugiat dolor. Quisque eget eros quis neque egestas ultricies.
+				.caja.tablet-1-3
+					.noticia
+						h3.noticia__title Men's hair loss
+							span Vestibulus laculis
+						img.noticia__img(src="img/noticia1.jpg", alt="")
+						p.noticia__description 
+						|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas feugiat dolor. Quisque eget eros quis neque egestas ultricies.
+
+		section#footer
+			.grupo
+				.caja.tablet-30.medio
+					p.creditos 
+					|Smash Bross &copy; 2015 | Privacy Policy
+				.caja.tablet-50
+					.sociales
+						a(href="#").sociales__item.icon-facebook 
+						a(href="#").sociales__item.icon-twitter
+						a(href="#").sociales__item.icon-rss
+						a(href="#").sociales__item.icon-youtube
+						
+
+
+		

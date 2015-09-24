@@ -1,0 +1,50 @@
+@import "base/_variables";
+#header{
+	color: #fff;
+	@include hasta(tablet)
+	{
+		background: $color1;
+	}
+
+	@include desde(tablet)
+	{
+		background: linear-gradient(
+                    $color1 75%,
+                    transparent 75%
+			        );
+	}
+}
+
+.logo
+{
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 2em;
+	text-align: center;
+	color: white;
+	margin: .5em 0 0;
+	
+	span{
+		font-weight: 600;
+		color: $color2;
+	}
+
+	@include desde(web)
+	{
+		text-align: left;
+	}
+}
+
+.subtitle
+{
+	font-family: $header--font-family;
+	font-weight: 300;
+	opacity: .7;
+	text-align: center;
+
+	@include desde(web)
+	{
+		text-align: left;
+		line-height: 1;
+	} 
+}

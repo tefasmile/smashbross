@@ -1,0 +1,67 @@
+.banner
+{
+	margin-top: 1em;
+	position: relative;
+}
+
+.copy
+{
+	&__title{
+		color: $color2;
+		font-weight: 600;
+		margin: .5em 0 .3em;
+
+		span{
+			font-weight: 300;
+			text-transform: none;
+		}
+	}
+
+	&__description{
+		font-size: .9em;
+		margin-bottom: 0;
+	}
+
+	&__button{
+		color: white;
+		background: linear-gradient(
+                    darken($color1,10%),
+                    darken($color1,20%)
+			        );
+		line-height: 2;
+		display: inline-block;
+		border-radius: 3px;
+		margin: .5em 0;
+		padding: 0 1em;
+		text-decoration: none;
+		&:hover{
+			color: $color2;
+		}
+	}
+}
+
+@include desde(tablet)
+{
+	.copy{
+		color: $color1;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 40%;
+		left: 2em;
+
+		&__title{
+			font-weight: 600;
+			font-size: 2.5em;
+			font-family: $body--font-family;
+			color: white;
+			line-height: 1;
+			
+			span{
+				font-size: .5em;
+				display: block;
+				line-height: 1;
+			}
+		}
+	}
+}

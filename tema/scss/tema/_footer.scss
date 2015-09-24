@@ -1,0 +1,19 @@
+#footer
+{
+	background: $color1;
+	color: white;
+	font-size: .9em;
+	padding: 1em 0;
+	text-align: center;
+
+	@include hasta(tablet)
+	{
+		text-align: center;
+	}
+}
+
+.creditos
+{
+	margin-bottom: 0;
+}
+

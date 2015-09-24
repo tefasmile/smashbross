@@ -1,0 +1,72 @@
+@import "base/_variables";
+#mostrar-menu
+{
+	padding-left: 1em;
+	line-height: 2.5;
+	background: $color2;
+	color: $color1;
+
+	@include mostrar-menu($color1,1em);
+
+	@include desde(web)
+	{
+		display: none;
+	}
+}
+
+.menu
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	@include hasta(web)
+	{
+		display: none;
+		background: lighten($color2, 20%);
+
+		&__link{
+			color: $color1;
+			text-decoration: none;
+			line-height: 2;
+			padding-left: 1em;
+			line-height: 2;
+			
+			&:hover{
+				color: darken($color1,10%);
+			}
+
+		}
+	}
+	
+	@include desde(web)
+	{
+		display: table;
+		float: right;
+		margin-top: 1.5em;
+		
+		&__item {
+			float: left;
+		}
+
+		&__link{
+			color: white;
+			line-height: 2.5em;
+			padding: 0 1.5em;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: 300;
+			font-family: $header--font-family;
+			opacity: .7;
+			border-right: 1px solid rgba(white,.3);
+
+			&:hover{
+				opacity: 1;
+			}
+		}
+
+	}
+	
+
+	
+}

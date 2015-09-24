@@ -1,0 +1,25 @@
+.noticia
+{
+	margin-bottom: 2em;
+	
+	&__img{
+		display: block;
+		margin: 0 auto;
+	}
+	
+	&__title{
+		text-align: center;
+		font-family: $body--font-family;
+		font-weight: 400;
+		
+		span{
+			display: block;
+			font-size: .8em;
+			font-weight: 300;
+		} 
+	}
+
+	&__description{
+		font-size: .85em;
+	}
+}
